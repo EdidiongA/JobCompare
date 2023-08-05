@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <string name="JobTitle">Enter Job Title</string>
+    <string name="CompanyName">Enter Company Name</string>
+    <string name="Location">Enter Location(city,state)</string>
+    <string name="OverallCOL">Enter Overall Cost Of Living</string>
+    <string name="CommuteTime">Enter Commute Time</string>
+    <string name="YearlySalary">Enter Yearly Salary</string>
+    <string name="YearlyBonus">Enter Yearly Bonus</string>
+    <string name="RetirementBenefits">Enter Retirement Benefits</string>
+    <string name="LeaveTime">Enter Leave Time</string>
+    <string name="SettingsComparisonCommuteTime">Commute Time</string>
+    <string name="ComparisionSettingsYearlySalary">Yearly Salary</string>
+    <string name="ComparisionSettingsYearlyBonus">Yearly Bonus</string>
+    <string name="ComparisonSettingsRetirementBenefits">Retirement Benefits</string>
+    <string name="ComparisionSettingsLeaveTime">Leave Time</string>
+    <string name="addJobWelcomeInfo">Welcome To this Job compare app, the perfect app to help you organize your job offers! </string>
+    <string name="addJobWelcomeInfo2">With this app, you can keep track of your job offers and even compare them to ensure you make good choices.</string>
+    <string name="addJobWelcomeInfo3">To get started, select an option below!</string>
+</resources>

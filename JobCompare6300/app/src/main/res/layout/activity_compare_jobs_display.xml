@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="40dp"
+    tools:context=".CompareJobsDisplay">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="48dp">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compare Job"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="379dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="The details of the job you selected are:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnCompareAgain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="COMPARE AGAIN"
+        android:textColor="@color/menuTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_exit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier" />
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="RETURN TO MAIN MENU"
+        android:textColor="@color/menuTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCompareAgain"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="btnCompareAgain,btn_exit"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="460dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/c_JobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" JobTitle"
+                android:textAlignment="viewStart"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_company"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Company"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_location"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Location"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_commute"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Commute Time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_YearlySalary"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Yearly Salary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_YearlyBonus"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Yearly Bonus"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_benefits"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Retirement Benefits"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_vacation"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Vacation"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_is_currentJob"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text=" Current Job"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/company1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/location1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/commute1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/salary1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/bonus1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/benefits1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/vacation1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/current1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/company2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/commute2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/salary2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/bonus2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/benefits2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/vacation2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/current2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
